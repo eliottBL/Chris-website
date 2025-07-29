@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="index">
+  <title>Spekki Webu</title>
+  <!-- use a file without background -->
+  <link rel="icon" href="./images/SpekkiWebuMascotBlack_icon.ico">
+  <!-- content="what you want to be read under the title of your site" -->
+  <meta name="description" content="...">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- need to test those lines by shaaring your site in DM insta for exemple -->
+  <meta property="og:title" content="Spekki Webu">
+  <meta property="og:image" src="images/SpekkiWebuMascotBlack.jpeg">
+  <!-- -->
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&family=Prosto+One&display=swap" rel="stylesheet">
+  <script defer src="script2.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <!-- audio -->
+  <audio id="myAudio">
+    <source src="./audio/sr² - Death By 9 To 5 2.wav" type="audio/wav">
+  </audio>
+  <header>
+    <img data-playing="false" id="player" src="./images/SpekkiWebuMascotBlack.jpeg">
+    <input type="range" id="volume" class="control-volume" min="0" max="2" value="0" list="gain-vals" step="0.01" data-action="volume" />
+    <h1>Spekki Webu</h1>
+    <ul class="social">
+        <li><a href="https://soundcloud.com/spekkiwebu">Soundcloud</a></li>
+        <li><a href="https://spekkiwebu.bandcamp.com/">Bandcamp</a></li>
+        <li><a href="https://www.instagram.com/spekkiwebu.mirrorzone/?hl=fr">instagram</a></li>
+        <li><a href="mailto:info.mirrorzone@gmail.com">contact</a></li>
+     </ul>
+  </header>
+  <main>
+    <div class="block">
+        <h2>Releases</h2>
+          <ul id="releases"></ul>
+    </div>
+    <div class="block">
+        <h2>Streams</h2>
+          <ul id="streams"></ul>
+    </div>
+    
+
+  </main>
+  <footer>
+    <h3 class="social">Spekki Webu mirrorzone</h3>
+    <ul class="social">
+      <!-- ??? 
+        <li>social again </li>
+        <li>or just an email ?</li> -->
+     </ul>
+</footer>
+</body>
+</html>
