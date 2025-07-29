@@ -9,8 +9,11 @@ const fader = document.getElementById("volume");
 
 
 const playButton = document.getElementById('player');
+const gainNode = audioCtx.createGain();
 
 playButton.addEventListener('click', function() {
+    audioCtx.resume();
+    
     gainNode.gain.value = 0;
     fader.style.display = "flex";
 
@@ -26,10 +29,6 @@ playButton.addEventListener('click', function() {
 }, false);
 
 
-
-
-
-const gainNode = audioCtx.createGain();
 
 const volumeControl = document.querySelector('[data-action="volume"]');
 volumeControl.addEventListener('input', function() {
