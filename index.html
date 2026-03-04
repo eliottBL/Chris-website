@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="robots" content="index">
+  <!-- what title -->
   <title>Spekki Webu</title>
   <!-- use a file without background -->
   <link rel="icon" href="./images/SpekkiWebuMascotBlack_icon.ico">
@@ -21,37 +22,56 @@
   <script defer src="player.js"></script>
   <script defer src="app.js"></script>
 </head>
+
 <body>
   <!-- audio -->
   <audio id="myAudio">
     <source src="/audio/audiotest.ogg" type="audio/ogg">
   </audio>
+
   <header>
-    <img data-playing="false" id="player" src="./images/SpekkiWebuMascotBlack.jpeg">
-    <input type="range" id="volume" class="control-volume" min="0" max="2" value="0" list="gain-vals" step="0.01" data-action="volume" />
-    <h1>Spekki Webu</h1>
-    <ul class="social">
-        <li><a href="https://soundcloud.com/spekkiwebu">Soundcloud</a></li>
-        <li><a href="https://spekkiwebu.bandcamp.com/">Bandcamp</a></li>
-        <li><a href="https://www.instagram.com/spekkiwebu.mirrorzone/?hl=fr">instagram</a></li>
-        <li><a href="mailto:info.mirrorzone@gmail.com">contact</a></li>
-     </ul>
   </header>
+
   <main>
-    <div class="block">
-        <h2>Releases</h2>
-          <ul id="releases"></ul>
+  <div class="box">
+    <div class="container_image">
+      <img data-playing="false" id="player" src="./images/SWMascot_Brown.png">
+      <div class="title">
+        <h1>Spekki Webu : Chris Scholz</h1>
+        <p class="location">Delft,NL</p>
+        <input type="range" id="volume" class="control-volume" min="0" max="2" value="0" list="gain-vals" step="0.01" data-action="volume" />
+      </div>
     </div>
-    <div class="block">
-        <h2>Streams</h2>
+    <div class="container_data">
+      <div class="filter"></div>
+      <nav>
+        <p class="work">works</p>
+        <p class="about">about</p>
+      </nav>
+      <ul class="social">
+          <li><a class="social_link" href="https://soundcloud.com/spekkiwebu">Soundcloud</a></li>
+          <li><a class="social_link" href="https://spekkiwebu.bandcamp.com/">Bandcamp</a></li>
+          <li><a class="social_link"href="https://www.instagram.com/spekkiwebu.mirrorzone/?hl=fr">instagram</a></li>
+          <li><a class="social_link" href="mailto:info.mirrorzone@gmail.com">contact</a></li>
+      </ul>
+    </div>
+  
+    <div class="modal">
+      <div class="block">
+        <h3>Releases</h3>
+          <ul id="releases"></ul>
+      </div>
+      <div class="block">
+        <h3>Streams</h3>
           <ul id="streams"></ul>
+      </div>
     </div>
     
-
+  </div>
   </main>
   <!--  -->
   <footer>
-    <h3>Spekki Webu - Mirrorzone </h3>
   </footer>
+
 </body>
 </html>
