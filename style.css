@@ -37,7 +37,6 @@ main{
     z-index: 2;
     display: flex;
     gap: 1%;
-    border: 2px solid blue;;
     /*padding: 10px;*/
 }
 
@@ -164,9 +163,15 @@ p{
     margin: 0px;
     padding: 0;
 }
+.work:active{
+    color: blue;
+}
 .work:hover{
     color: blue;
     cursor: pointer;
+}
+.about:active{
+    color: blue;
 }
 .about:hover{
     color: blue;
@@ -260,8 +265,14 @@ footer{
     body{
         justify-items: center;
     }
+    main{
+        border: 2px solid blueviolet;
+        width: 100%;
+    }
     .main_container{
         flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
     .box{
     flex-direction: column;
@@ -275,8 +286,7 @@ footer{
     width: 250px;
     }
     .modal{
-        margin-left: 15px;
-        width: 86vw;
+        width: 85%;
     }
     .modal_work{
         flex-direction: column;
@@ -300,7 +310,7 @@ footer{
         width: 20px;
     }
     nav{
-        margin-top: 15px;
+        margin-top: 5px;
     }
     .social{
         font-size: 10px;
