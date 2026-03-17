@@ -263,7 +263,9 @@ footer{
 
 @media only screen and (max-width: 600px) {
     body{
+        display: flex;
         justify-items: center;
+        align-items: center;
     }
     main{
         border: 2px solid blueviolet;
