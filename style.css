@@ -269,7 +269,6 @@ footer{
         align-items: center;
     }
     main{
-        border: 2px solid blueviolet;
         width: 100%;
     }
     .main_container{
@@ -295,18 +294,15 @@ footer{
         flex-direction: column;
         gap: 5%;
     }
-    .title{
-    
-    }
-    h1{
-       
+    button{
+        color: #414138;
     }
     .container_data{
         justify-content: start;
         width: 250px;
-        height: 40%;
-        margin-top: 0px;
-        min-height: 140px;
+        padding-left: 60px;
+        height: 30%;
+        min-height: 100px;
     }
     .filter{
         height: 20px;
