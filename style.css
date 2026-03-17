@@ -264,6 +264,7 @@ footer{
 @media only screen and (max-width: 600px) {
     body{
         display: flex;
+        flex-direction: column;
         justify-items: center;
         align-items: center;
     }
