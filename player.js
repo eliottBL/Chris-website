@@ -13,7 +13,7 @@ const gainNode = audioCtx.createGain();
 
 playButton.addEventListener('click', function() {
     audioCtx.resume();
-    
+
     gainNode.gain.value = 0;
     fader.style.display = "flex";
 
@@ -37,3 +37,5 @@ volumeControl.addEventListener('input', function() {
 
 track.connect(gainNode).connect(audioCtx.destination);
 
+//audioElement.loop = true; // Pour activer la boucle
+//audioElement.loop = false; // Pour désactiver

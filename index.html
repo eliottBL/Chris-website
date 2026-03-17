@@ -33,44 +33,64 @@
   </header>
 
   <main>
-  <div class="box">
-    <div class="container_image">
-      <img data-playing="false" id="player" src="./images/SWMascot_Brown.png">
-      <div class="title">
-        <h1>Spekki Webu : Chris Scholz</h1>
-        <p class="location">Delft,NL</p>
-        <input type="range" id="volume" class="control-volume" min="0" max="2" value="0" list="gain-vals" step="0.01" data-action="volume" />
-      </div>
-    </div>
-    <div class="container_data">
-      <div class="filter"></div>
-      <nav>
-        <p class="work">works</p>
-        <p class="about">about</p>
-      </nav>
-      <ul class="social">
-          <li><a class="social_link" href="https://soundcloud.com/spekkiwebu">Soundcloud</a></li>
-          <li><a class="social_link" href="https://spekkiwebu.bandcamp.com/">Bandcamp</a></li>
-          <li><a class="social_link"href="https://www.instagram.com/spekkiwebu.mirrorzone/?hl=fr">instagram</a></li>
-          <li><a class="social_link" href="mailto:info.mirrorzone@gmail.com">contact</a></li>
-      </ul>
-    </div>
-  
     <div class="modal">
-      <div class="block">
-        <h3>Releases</h3>
-          <ul id="releases"></ul>
-      </div>
-      <div class="block">
-        <h3>Streams</h3>
-          <ul id="streams"></ul>
-      </div>
+          <div class="line">    
+          </div>
+          <div class="container_close">
+            <button class="close">⌅</button>
+          </div>
+          <div class="modal_work">
+              <div class="block">
+                <h3>Releases</h3>
+                  <ul id="releases"></ul>
+              </div>
+              <div class="block">
+                <h3>Works</h3>
+                  <ul id="streams"></ul>
+              </div>
+              <div class="block">
+                <h3>Others</h3>
+                  <ul id="streams"></ul>
+              </div>
+          </div>
+          <div class="modal_about">
+            about...
+          </div>
     </div>
-    
-  </div>
+    <div class="main_container">
+      <div class="box_left">        
+      </div>
+      <div class="box_center">
+        <div class="container_image">
+            <img data-playing="false" id="player" src="./images/SWlogo_GreenCream.png">
+            <input type="range" id="volume" class="control-volume" min="0" max="2" value="0" list="gain-vals" step="0.01" data-action="volume" />
+        </div>
+      </div>
+      <div class="box_Right">
+        <div class="container_data">
+          <div class="title">
+            <h1>Spekki Webu <br> Chris Scholz</h1>
+            <p class="location">Delft,NL</p>
+            <input type="range" id="volume" class="control-volume" min="0" max="2" value="0" list="gain-vals" step="0.01" data-action="volume" />
+          </div>
+          <!--<div class="filter"></div>-->
+          <nav>
+              <p class="work"><u class="work_sel">⎯⎯⎯⎯</u>work</p>
+              <p class="about"><u class="about_sel">⎯⎯⎯⎯</u>about</p>
+          </nav>
+          <ul class="social">
+              <li><a class="social_link" href="https://soundcloud.com/spekkiwebu">Soundcloud</a></li>
+              <li><a class="social_link" href="https://spekkiwebu.bandcamp.com/">Bandcamp</a></li>
+              <li><a class="social_link"href="https://www.instagram.com/spekkiwebu.mirrorzone/?hl=fr">instagram</a></li>
+              <li><a class="social_link" href="mailto:info.mirrorzone@gmail.com">contact</a></li>
+          </ul>
+        </div>       
+      </div>
+    </div> 
   </main>
   <!--  -->
   <footer>
+    <img class="footer_image" src="./images/SWlogo_Footer_GreenCream.png">
   </footer>
 
 </body>
