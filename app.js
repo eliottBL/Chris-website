@@ -26,7 +26,6 @@ fetch(workURL)
     return response.json();
   })
   .then(work => {
-    console.log(work); // Array of JSON objects from MockAPI
     for (let i=0; i < work.length; i++) {
         genererWorkList(work, i)        
     }
@@ -40,7 +39,6 @@ fetch(aboutURL)
     return response.json();
   })
   .then(about => {
-    console.log(about); // Array of JSON objects from MockAPI
     for (let i=0; i < about.length; i++) {
         genererAbout(about, i)        
     }
