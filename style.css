@@ -19,25 +19,33 @@ main{
 }
 .main_container{
     display: flex;
-    height: 100%;
+    align-items: center;
     justify-content: center;
-    justify-items: center;
-    align-content: center;
-    justify-items: space-around;
+    height: 100%;
     filter: blur(0px);
     transition: filter 0.25s ease;
+    border: 2px solid blue;
 }
 .main_container.blured{
     filter: blur(2px);
 }
-.box_left{
-    width: 30%;
+.box_right{
+    border: 2px solid red;
+    display: flex;
+    margin-left: 170%;
+    margin-right: 30px;
+    align-items: center;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
 }
 .box_center{
     z-index: 2;
     display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
     gap: 1%;
-    /*padding: 10px;*/
 }
 
 
@@ -133,6 +141,10 @@ button:hover{
 }
 .modal_about{
     animation: fadeIn 0.1s ease-in;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 20px;
 }
 .block{
     /*border: 2px solid orange;*/
@@ -223,8 +235,32 @@ a{
 }
 a:hover{
     color: blue;
+    cursor: pointer;
+}
+.mail_list{
+    border: 2px solid orange;
+    visibility: hidden;
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    margin-top: -3px;
+    flex-direction: column;
+    width: 190px;
+    font-size: 9px;
+    color: #414138;
+    padding-left: 25px;
+}
+.mail{
+    font-size: 12px;
+    font-weight: 300;
 }
 
+#contact:hover + .mail_list{
+    visibility: visible;
+}
+.mail_list:hover{
+    visibility: visible;
+}
 footer{
     display: flex;
     justify-content: center;
