@@ -83,6 +83,7 @@ img:hover{
 .modal{
     z-index: 3;
     position: absolute;
+    min-height: 90vh;
     width: 95.5%;
     margin-top: 1px;
     margin-right: 1px;
@@ -167,14 +168,18 @@ p{
     padding: 0;
 }
 .work:active{
-    color: blue;
+    color: inherit;
+}
+.work{
+    text-decoration-color: none;
+    -webkit-tap-highlight-color: transparent;
 }
 .work:hover{
     color: blue;
     cursor: pointer;
 }
 .about:active{
-    color: blue;
+    color: #414138;
 }
 .about:hover{
     color: blue;
@@ -201,9 +206,6 @@ u{
 }
 .about_sel{
     display: none;
-}
-.about {
-    border: 2px solid red;
 }
 .social{
     display: flex;
@@ -348,7 +350,6 @@ footer{
     .container_data{
         justify-content: start;
         width: 250px;
-        /*margin-top: -40px;*/
         padding-left: 58px;
         height: 30%;
         min-height: 100px;
@@ -359,6 +360,7 @@ footer{
     }
     nav{
         margin-top: 5px;
+        width: 40%;
     }
     .social{
         font-size: 10px;

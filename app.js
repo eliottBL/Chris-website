@@ -83,11 +83,11 @@ function closeAbout(){
 }
 function openWork(){
     work_sel.style.display = "inline";
-    modal_work.style.display = "flex";   
+    modal_work.style.display = "flex"; 
 }
 function openAbout(){
     about_sel.style.display = "inline";
-    modal_about.style.display = "flex";   
+    modal_about.style.display = "flex"; 
 }
 
 boutonClose.addEventListener("click", function () {
