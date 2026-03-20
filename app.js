@@ -15,7 +15,6 @@ function genererAbout(json, i){
     text.textContent = data.paragraphe;
     section.appendChild(text);    
 }
-////
 
 const workURL = "https://69bd2e332bc2a25b22adc478.mockapi.io/api/chriswebsite/data/work"; // replace with your URL
 const aboutURL ="https://69bd2e332bc2a25b22adc478.mockapi.io/api/chriswebsite/data/about"; //
@@ -45,8 +44,8 @@ fetch(aboutURL)
 
   })
   .catch(error => console.error("Fetch error:", error));
+///
 
-////
 const boutonOpenWork = document.querySelector(".work");
 const boutonOpenAbout = document.querySelector(".about");
 const boutonClose = document.querySelector(".close");
@@ -57,6 +56,8 @@ const modal_work = document.querySelector(".modal_work");
 const modal_about = document.querySelector(".modal_about");
 const work_sel = document.querySelector(".work_sel");
 const about_sel = document.querySelector(".about_sel");
+const contact = document.getElementById("contact");
+const mail = document.querySelector(".mail_list");
 
 function openModal() {
     background.classList.add('blured');
@@ -102,3 +103,7 @@ boutonOpenAbout.addEventListener("click", function () {
     closeWork();
     openAbout();
 });
+contact.addEventListener("click", function(){
+    mail.style.visibility = "visible";
+    mail.style.opacity = 1;
+}) 
