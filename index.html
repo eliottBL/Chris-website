@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="robots" content="index">
   <!-- what title -->
-  <title>Spekki Webu</title>
-  <!-- use a file without background -->
+  <title>Chris Scholz</title>
+  <!-- change with new one -->
   <link rel="icon" href="./images/SpekkiWebuMascotBlack_icon.ico">
   <!-- content="what you want to be read under the title of your site" -->
   <meta name="description" content="...">
@@ -53,20 +53,17 @@
                   <ul id="streams"></ul>
               </div>
           </div>
-          <div class="modal_about">
-            about...
+          <div class="modal_about" id="about">
           </div>
     </div>
     <div class="main_container">
-      <div class="box_left">        
-      </div>
       <div class="box_center">
         <div class="container_image">
             <img data-playing="false" id="player" src="./images/SWlogo_GreenCream.png">
             <input type="range" id="volume" class="control-volume" min="0" max="2" value="0" list="gain-vals" step="0.01" data-action="volume" />
         </div>
       </div>
-      <div class="box_Right">
+      <div class="box_right">
         <div class="container_data">
           <div class="title">
             <h1>Spekki Webu <br> Chris Scholz</h1>
@@ -79,10 +76,26 @@
               <p class="about"><u class="about_sel">⎯⎯⎯⎯</u>about</p>
           </nav>
           <ul class="social">
-              <li><a class="social_link" href="https://soundcloud.com/spekkiwebu">Soundcloud</a></li>
-              <li><a class="social_link" href="https://spekkiwebu.bandcamp.com/">Bandcamp</a></li>
-              <li><a class="social_link"href="https://www.instagram.com/spekkiwebu.mirrorzone/?hl=fr">instagram</a></li>
-              <li><a class="social_link" href="mailto:info.mirrorzone@gmail.com">contact</a></li>
+              <li><a class="social_link" href="https://soundcloud.com/spekkiwebu" target="_blank">Soundcloud</a></li>
+              <li><a class="social_link" href="https://spekkiwebu.bandcamp.com/" target="_blank">Bandcamp</a></li>
+              <li><a class="social_link"href="https://www.instagram.com/spekkiwebu.mirrorzone/?hl=fr" target="_blank">instagram</a></li>
+              <li>
+                <a class="social_link" id="contact">contact</a>
+                <ul class="mail_list">
+                  <li>
+                    <p class="mail_description">Mirror Zone - Optic Portal Label inquiries:</p>
+                    <a class="mail" href="mailto:info.mirrorzone@gmail.com">→ info.mirrorzone@gmail.com</a>
+                  </li>
+                   <li>
+                    <p class="mail_description">Mixing & Mastering Services:</p>
+                    <a class="mail" href="mailto:chris@audiosculpture.nl">→ chris@audiosculpture.nl</a>
+                  </li>
+                   <li>
+                    <p class="mail_description">Post Audio Production and Sound Design:</p>
+                    <a class="mail" href="mailto:info@scholz.studio">→ info@scholz.studio</a>
+                  </li>
+                </ul>
+              </li>
           </ul>
         </div>       
       </div>

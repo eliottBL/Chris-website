@@ -1,16 +1,4 @@
-async function getDataUrl() {
-    const array = await fetch("./url-datas.json")
-    const json = await array.json()
-    
-    for (let i=0; i < json.length; i++) {
-
-        genererArticles(json, i)
-        
-    }
-}
-getDataUrl()
-
-function genererArticles(json, i) {
+function genererWorkList(json, i) {
     const data = json[i];
     const section = document.getElementById(data.type);
     const liste = document.createElement("li");
@@ -20,8 +8,47 @@ function genererArticles(json, i) {
     section.appendChild(liste);
     liste.appendChild(link);
 }
+function genererAbout(json, i){
+    const data = json[i];
+    const section = document.getElementById("about");
+    const text = document.createElement("p");
+    text.textContent = data.paragraphe;
+    section.appendChild(text);    
+}
+////
 
-//
+const workURL = "https://69bd2e332bc2a25b22adc478.mockapi.io/api/chriswebsite/data/work"; // replace with your URL
+const aboutURL ="https://69bd2e332bc2a25b22adc478.mockapi.io/api/chriswebsite/data/about"; //
+
+fetch(workURL)
+  .then(response => {
+    if (!response.ok) throw new Error("Network response was not ok");
+    return response.json();
+  })
+  .then(work => {
+    console.log(work); // Array of JSON objects from MockAPI
+    for (let i=0; i < work.length; i++) {
+        genererWorkList(work, i)        
+    }
+
+  })
+  .catch(error => console.error("Fetch error:", error));
+
+fetch(aboutURL)
+  .then(response => {
+    if (!response.ok) throw new Error("Network response was not ok");
+    return response.json();
+  })
+  .then(about => {
+    console.log(about); // Array of JSON objects from MockAPI
+    for (let i=0; i < about.length; i++) {
+        genererAbout(about, i)        
+    }
+
+  })
+  .catch(error => console.error("Fetch error:", error));
+
+////
 const boutonOpenWork = document.querySelector(".work");
 const boutonOpenAbout = document.querySelector(".about");
 const boutonClose = document.querySelector(".close");
