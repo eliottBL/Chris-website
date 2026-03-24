@@ -124,6 +124,7 @@ button:hover{
 .modal_about{
     animation: fadeIn 0.1s ease-in;
     padding-top: 10px;
+    padding-right: 40%;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -284,10 +285,11 @@ footer{
 #volume {
     -webkit-appearance: none;
     height: 5px;
-    background:white;
+    background:#9797788e;;
     outline: none;
     border-radius: 20px;
     opacity: 0.9;
+    border: 1px solid #414138;;
     -webkit-transition: .2s;
     transition: opacity .2s;
 }
@@ -343,6 +345,7 @@ footer{
     }
     .modal_about{
         font-size: 15px;
+        padding-right: 0;
     }
     button{
         color: #414138;
@@ -350,7 +353,7 @@ footer{
     .container_data{
         justify-content: start;
         width: 250px;
-        padding-left: 58px;
+        padding-left: 90px;
         height: 30%;
         min-height: 100px;
     }
